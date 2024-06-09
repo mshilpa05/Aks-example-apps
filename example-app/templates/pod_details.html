@@ -1,0 +1,30 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<body style="background: #16a085;"></body>
+<div style="color: #e4e4e4;
+    text-align:  center;
+    height: 90px;
+    vertical-align:  middle;">
+{% if node_name %}
+  <h1> Node name: {{ node_name }}</h1>
+{% endif %}
+
+{% if pod_name %}
+  <h1> Pod name: {{ pod_name }}</h1>
+{% endif %}
+
+{% if pod_namespace %}
+  <h1> Pod namespace: {{pod_namespace }}</h1>
+{% endif %}
+
+{% if message_from_other_pod %}
+  <h1> Message from other pod: {{message_from_other_pod}}</h1>
+{% endif %}
+
+  {% if contents %}
+  <textarea rows="10" cols="50">
+    {{ contents }}
+  </textarea>
+  {% endif %}
+
+</div>

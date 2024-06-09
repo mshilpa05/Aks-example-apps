@@ -1,0 +1,6 @@
+# @example_api_HostAddress = http://localhost:5089
+
+# GET {{example_api_HostAddress}}/keyvault/
+# Accept: application/json
+
+# ###
